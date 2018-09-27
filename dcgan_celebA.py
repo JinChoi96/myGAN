@@ -214,6 +214,9 @@ dataset = datasets.ImageFolder(data_dir, transform)
 data_loader = DataLoader(dataset, batch_size = batch_size, shuffle = True, drop_last = True)
 
 
+D_labels = to_cuda(torch.ones(batch_size))
+D_fakes = to_cuda(torch.ones(batch_size))
+
 
 # training
 print('training started')
