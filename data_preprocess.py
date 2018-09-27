@@ -2,6 +2,12 @@ import os
 import matplotlib.pyplot as plt
 from scipy.misc import imresize
 
+'''
+ copied from https://github.com/znxlwm/pytorch-MNIST-CelebA-GAN-DCGAN/blob/master/celebA_data_preprocess.py
+ 
+'''
+
+
 root = 'data/celebA/img_align_celeba/'
 save_dir = 'data/resized_celebA/'
 resize = 64
